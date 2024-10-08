@@ -1,4 +1,4 @@
-del=0.000001;
+del=0.00001;
 X=0:del:10;
 Y=sin(2*pi*X*20000);
 
@@ -9,6 +9,7 @@ F=(0:length(W)-1)*Fs/length(W);
 n=length(Y);
 fshift=(-n/2:n/2-1)*(Fs/n);
 wshift=fftshift(W);
+wshift=wshift*2/length(W);
 
 %plot(F,abs(W));
 plot(fshift,abs(wshift));
