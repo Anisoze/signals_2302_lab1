@@ -1,0 +1,11 @@
+syms f t g;
+f(t)=sin(t);
+g(t)=cos(t);
+disp(f(t));
+disp(g(t));
+A=fourier(f(t));
+B=fourier(g(t));
+C=fourier(f(t)*g(t));
+disp(A);
+disp(B);
+disp(C);

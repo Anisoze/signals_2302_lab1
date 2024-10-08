@@ -1,0 +1,13 @@
+syms f(t) t a q(t) g(t);
+f(t)=dirac(t);
+disp(f(t));
+q(t)=diff(f(t));
+disp(q(t));
+g(t)=diff(q(t));
+disp(g(t));
+A=fourier(f(t));
+B=fourier(q(t));
+C=fourier(g(t));
+disp(A);
+disp(B);
+disp(C);

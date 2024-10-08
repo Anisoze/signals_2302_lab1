@@ -1,0 +1,10 @@
+syms f(t) g(t) t a b;
+f(t)=sin(t);
+g(t)=sin(2*t);
+A=fourier(f(t));
+B=fourier(g(t));
+C=fourier(a*f(t)+b*g(t));
+disp(A);
+disp(B);
+disp(a*A+b*B);
+disp(C);

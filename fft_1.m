@@ -1,0 +1,14 @@
+del=0.5;
+X=0:del:2;
+f=sin(X);
+a=5;
+b=2;
+g=sin(2*X);
+d=a*f+b*g;
+F=fft(f);
+F2=fft(g);
+F3=fft(a*f+b*g);
+disp(F);
+disp(F2);
+disp(F3);
+disp(a*F+b*F2);
